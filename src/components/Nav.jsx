@@ -71,13 +71,13 @@ const NavLink = ({ text }) => {
 const NavRight = () => {
   return (
     <div className="flex items-center gap-4">
-      <motion.button
+      {/* <motion.button
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         className="px-4 py-2 bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent font-medium rounded-md whitespace-nowrap"
       >
         Contact Us
-      </motion.button>
+      </motion.button> */}
       <motion.button
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
