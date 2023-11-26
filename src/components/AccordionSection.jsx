@@ -132,7 +132,7 @@ const items = [
     imgSrc:
       "https://images.unsplash.com/photo-1611581372056-30cf28a7bd2e?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eius deserunt quia consectetur aliquid obcaecati voluptatibus quos distinctio natus! Tenetur.",
+      "Supplying critical fastening solutions to the energy sector, our robust and reliable fasteners ensure the structural integrity of power plants and infrastructure, fortifying the foundation of sustainable energy development.",
   },
   {
     id: 2,
@@ -141,7 +141,7 @@ const items = [
     imgSrc:
       "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eius deserunt quia consectetur aliquid obcaecati voluptatibus quos distinctio natus! Tenetur.",
+      "Elevate construction projects with our premium fasteners. From structural bolts to specialty screws, our tools and fasteners deliver unmatched durability, securing foundations for buildings that stand the test of time.",
   },
   {
     id: 3,
@@ -150,7 +150,7 @@ const items = [
     imgSrc:
       "https://images.unsplash.com/photo-1610891015188-5369212db097?q=80&w=3029&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eius deserunt quia consectetur aliquid obcaecati voluptatibus quos distinctio natus! Tenetur.",
+      "In the heart of manufacturing, our precision tools and fasteners play a pivotal role, optimizing production lines for efficiency. Trust us to provide the sturdy connections that drive industrial success.",
   },
   {
     id: 4,
@@ -159,6 +159,6 @@ const items = [
     imgSrc:
       "https://images.unsplash.com/photo-1509391111737-9b07f052f6b6?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eius deserunt quia consectetur aliquid obcaecati voluptatibus quos distinctio natus! Tenetur.",
+      "Serving the public sector, our fasteners contribute to the safety and longevity of infrastructure projects. From bridges to civic structures, our tools provide the reliability essential for community well-being.",
   },
 ];
