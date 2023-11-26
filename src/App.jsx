@@ -13,11 +13,11 @@ function App() {
       <Example />
       <ShuffleHero />
       <Banner />
-      <CollapseCardFeatures />
+      {/* <CollapseCardFeatures />
       <AccordionSolutions />
       <ScrollingTestimonials />
       <ShiftingContactForm />
-      <FooterSection />
+      <FooterSection /> */}
     </>
   );
 }

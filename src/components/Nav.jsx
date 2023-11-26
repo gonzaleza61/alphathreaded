@@ -43,10 +43,10 @@ const NavLeft = ({ setIsOpen }) => {
         <FiMenu />
       </motion.button>
       <Logo />
+      <NavLink text="About Us" />
+      <NavLink text="Services" />
       <NavLink text="Solutions" />
-      <NavLink text="Community" />
-      <NavLink text="Pricing" />
-      <NavLink text="Company" />
+      <NavLink text="Testimonials" />
     </div>
   );
 };
@@ -76,14 +76,14 @@ const NavRight = () => {
         whileTap={{ scale: 0.95 }}
         className="px-4 py-2 bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent font-medium rounded-md whitespace-nowrap"
       >
-        Sign in
+        Contact Us
       </motion.button>
       <motion.button
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         className="px-4 py-2 bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-medium rounded-md whitespace-nowrap"
       >
-        Sign up
+        Request A Quote
       </motion.button>
     </div>
   );
@@ -97,10 +97,10 @@ const NavMenu = ({ isOpen }) => {
       animate={isOpen ? "open" : "closed"}
       className="absolute p-4 bg-white shadow-lg left-0 right-0 top-full origin-top flex flex-col gap-4"
     >
+      <MenuLink text="About Us" />
+      <MenuLink text="Services" />
       <MenuLink text="Solutions" />
-      <MenuLink text="Community" />
-      <MenuLink text="Pricing" />
-      <MenuLink text="Company" />
+      <MenuLink text="Testimonials" />
     </motion.div>
   );
 };
