@@ -1,4 +1,9 @@
-import { FiBarChart, FiBell, FiDollarSign, FiPlay } from "react-icons/fi";
+import { RiGovernmentLine } from "react-icons/ri";
+import {
+  MdOutlineEnergySavingsLeaf,
+  MdOutlineConstruction,
+  MdPrecisionManufacturing,
+} from "react-icons/md";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import useWindowSize from "../hooks/useWindowSize";
@@ -123,7 +128,7 @@ const items = [
   {
     id: 1,
     title: "Energy Production",
-    Icon: FiDollarSign,
+    Icon: MdOutlineEnergySavingsLeaf,
     imgSrc:
       "https://images.unsplash.com/photo-1611581372056-30cf28a7bd2e?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
@@ -132,7 +137,7 @@ const items = [
   {
     id: 2,
     title: "Construction",
-    Icon: FiPlay,
+    Icon: MdOutlineConstruction,
     imgSrc:
       "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
@@ -141,7 +146,7 @@ const items = [
   {
     id: 3,
     title: "Manufacturing & Industrial",
-    Icon: FiBell,
+    Icon: MdPrecisionManufacturing,
     imgSrc:
       "https://images.unsplash.com/photo-1610891015188-5369212db097?q=80&w=3029&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
@@ -150,7 +155,7 @@ const items = [
   {
     id: 4,
     title: "Public Sector",
-    Icon: FiBarChart,
+    Icon: RiGovernmentLine,
     imgSrc:
       "https://images.unsplash.com/photo-1509391111737-9b07f052f6b6?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
