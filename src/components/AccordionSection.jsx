@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { RiGovernmentLine } from "react-icons/ri";
 import {
   MdOutlineEnergySavingsLeaf,
@@ -13,6 +14,11 @@ const VerticalAccordion = () => {
 
   return (
     <section className="px-4 py-12 bg-indigo-600">
+      <div className="w-full justify-center text-center py-4">
+        <h1 className="text-4xl md:text-6xl font-semibold text-white">
+          Industries Served
+        </h1>
+      </div>
       <div className="flex flex-col lg:flex-row h-fit lg:h-[450px] w-full max-w-6xl mx-auto shadow overflow-hidden">
         {items.map((item) => {
           return (
