@@ -111,7 +111,7 @@ const panelVariants = {
 const panelVariantsSm = {
   open: {
     width: "100%",
-    height: "200px",
+    height: "300px",
   },
   closed: {
     width: "100%",
