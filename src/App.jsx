@@ -1,4 +1,5 @@
 // import VerticalAccordion from "./components/AccordionSection";
+import AboutSection from "./components/AboutSection";
 import VerticalAccordion from "./components/AccordionSection";
 import Banner from "./components/BannerSection";
 import ShiftingContactForm from "./components/ContactSection";
@@ -14,6 +15,7 @@ function App() {
     <>
       <Example />
       <ShuffleHero />
+      <AboutSection />
       {/* <Banner /> */}
       <VerticalAccordion />
       {/* <CollapseCardFeatures />

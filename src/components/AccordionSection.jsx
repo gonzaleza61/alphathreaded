@@ -14,7 +14,7 @@ const VerticalAccordion = () => {
 
   return (
     <section className="px-4 py-12 bg-indigo-600">
-      <div className="w-full justify-center text-center py-4">
+      <div className="w-full justify-center text-center pb-8">
         <h1 className="text-4xl md:text-6xl font-semibold text-white">
           Industries Served
         </h1>
