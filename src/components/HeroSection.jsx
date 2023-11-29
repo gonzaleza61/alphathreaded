@@ -92,11 +92,11 @@ const squareData = [
   },
   {
     id: 13,
-    src: "https://alphathreaded.vercel.app/alphaseven.jpg",
+    src: "https://alphathreaded.vercel.app/alphaeleven.jpg",
   },
   {
     id: 14,
-    src: "https://alphathreaded.vercel.app/alphaseven.jpg",
+    src: "https://alphathreaded.vercel.app/alphatwelve.jpg",
   },
   {
     id: 15,
