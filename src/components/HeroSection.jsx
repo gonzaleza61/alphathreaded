@@ -44,7 +44,7 @@ const shuffle = (array) => {
 const squareData = [
   {
     id: 1,
-    src: "https://alphathreaded.vercel.app/alphanails.jpg",
+    src: "https://alphathreaded.vercel.app/alphafifteen.jpg",
   },
   {
     id: 2,
@@ -100,11 +100,11 @@ const squareData = [
   },
   {
     id: 15,
-    src: "https://alphathreaded.vercel.app/alphaseven.jpg",
+    src: "https://alphathreaded.vercel.app/alphathirteen.jpg",
   },
   {
     id: 16,
-    src: "https://alphathreaded.vercel.app/alphaseven.jpg",
+    src: "https://alphathreaded.vercel.app/alphafourteen.jpg",
   },
 ];
 
