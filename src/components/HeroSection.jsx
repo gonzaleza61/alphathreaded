@@ -72,7 +72,7 @@ const squareData = [
   },
   {
     id: 8,
-    src: "https://alphathreaded.vercel.app/alphaseven.jpg",
+    src: "https://alphathreaded.vercel.app/alphasix.jpg",
   },
   {
     id: 9,
@@ -80,15 +80,15 @@ const squareData = [
   },
   {
     id: 10,
-    src: "https://alphathreaded.vercel.app/alphaseven.jpg",
+    src: "https://alphathreaded.vercel.app/alphaeight.jpg",
   },
   {
     id: 11,
-    src: "https://alphathreaded.vercel.app/alphaseven.jpg",
+    src: "https://alphathreaded.vercel.app/alphanine.jpg",
   },
   {
     id: 12,
-    src: "https://alphathreaded.vercel.app/alphaseven.jpg",
+    src: "https://alphathreaded.vercel.app/alphaten.jpg",
   },
   {
     id: 13,
@@ -100,7 +100,7 @@ const squareData = [
   },
   {
     id: 15,
-    src: "hhttps://alphathreaded.vercel.app/alphaseven.jpg",
+    src: "https://alphathreaded.vercel.app/alphaseven.jpg",
   },
   {
     id: 16,
