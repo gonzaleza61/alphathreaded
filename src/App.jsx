@@ -5,6 +5,7 @@ import ShiftingContactForm from "./components/ContactSection";
 import ShuffleHero from "./components/HeroSection";
 import Example from "./components/Nav";
 import StackedCardTestimonials from "./components/TestimonialsSection";
+import FooterSection from "./components/FooterSection";
 
 function App() {
   return (
@@ -16,10 +17,10 @@ function App() {
       <VerticalAccordion />
       <StackedCardTestimonials />
       <ShiftingContactForm />
+      <FooterSection />
       {/* <CollapseCardFeatures />
       <AccordionSolutions />
-      <ShiftingContactForm />
-      <FooterSection /> */}
+      <ShiftingContactForm /> */}
     </>
   );
 }
