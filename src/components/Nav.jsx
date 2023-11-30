@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { FiMenu, FiArrowRight } from "react-icons/fi";
@@ -43,18 +44,18 @@ const NavLeft = ({ setIsOpen }) => {
         <FiMenu />
       </motion.button>
       <Logo />
-      <NavLink text="About Us" />
-      <NavLink text="Services" />
-      <NavLink text="Solutions" />
-      <NavLink text="Testimonials" />
+      <NavLink href="#about" text="About Us" />
+      <NavLink href="#services" text="Services" />
+      <NavLink href="#solutions" text="Solutions" />
+      <NavLink href="#testimonials" text="Testimonials" />
     </div>
   );
 };
 
-const NavLink = ({ text }) => {
+const NavLink = ({ href, text }) => {
   return (
     <a
-      href="#"
+      href={href}
       rel="nofollow"
       className="hidden lg:block h-[30px] overflow-hidden font-medium"
     >
@@ -97,20 +98,20 @@ const NavMenu = ({ isOpen }) => {
       animate={isOpen ? "open" : "closed"}
       className="absolute p-4 bg-white shadow-lg left-0 right-0 top-full origin-top flex flex-col gap-4"
     >
-      <MenuLink text="About Us" />
-      <MenuLink text="Services" />
-      <MenuLink text="Solutions" />
-      <MenuLink text="Testimonials" />
+      <MenuLink href="#about" text="About Us" />
+      <MenuLink href="#services" text="Services" />
+      <MenuLink href="#solutions" text="Solutions" />
+      <MenuLink href="#testimonials" text="Testimonials" />
     </motion.div>
   );
 };
 
-const MenuLink = ({ text }) => {
+const MenuLink = ({ href, text }) => {
   return (
     <motion.a
       variants={menuLinkVariants}
       rel="nofollow"
-      href="#"
+      href={href}
       className="h-[30px] overflow-hidden font-medium text-lg flex items-start gap-2"
     >
       <motion.span variants={menuLinkArrowVariants}>

@@ -8,7 +8,7 @@ import FooterSection from "./components/FooterSection";
 import ShuffleHero from "./components/HeroSection";
 import Example from "./components/Nav";
 import AccordionSolutions from "./components/SolutionsSection";
-import ScrollingTestimonials from "./components/TestimonialsSection";
+import StackedCardTestimonials from "./components/TestimonialsSection";
 
 function App() {
   return (
@@ -18,9 +18,9 @@ function App() {
       <AboutSection />
       {/* <Banner /> */}
       <VerticalAccordion />
+      <StackedCardTestimonials />
       {/* <CollapseCardFeatures />
       <AccordionSolutions />
-      <ScrollingTestimonials />
       <ShiftingContactForm />
       <FooterSection /> */}
     </>
