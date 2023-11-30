@@ -25,13 +25,7 @@ export default function AboutSection() {
             className="space-y-6 md:flex md:gap-6 md:space-y-0 lg:items-center lg:gap-12"
           >
             <div className="md:5/12 lg:w-5/12">
-              <img
-                src={logo}
-                alt="image"
-                width="500"
-                height="500"
-                className="rounded-xl"
-              />
+              <img src={logo} alt="image" width="500" height="500" />
             </div>
             <div className="md:7/12 lg:w-6/12">
               <motion.div

@@ -1,11 +1,13 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/prop-types */
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
 const ShiftingContactForm = () => {
   const [selected, setSelected] = useState("individual");
   return (
-    <section className="p-4 bg-slate-100">
-      <div className="w-full max-w-6xl mx-auto shadow-lg flex flex-col-reverse lg:flex-row rounded-lg overflow-hidden">
+    <section id="contact" className="p-4 bg-gray-200">
+      <div className="w-full max-w-6xl mx-auto shadow-lg flex flex-col-reverse lg:flex-row overflow-hidden">
         <Form selected={selected} setSelected={setSelected} />
         <Images selected={selected} />
       </div>
@@ -80,7 +82,7 @@ const Form = ({ selected, setSelected }) => {
       <div className="mb-6">
         <p className="text-2xl mb-2">I'd love to ask about...</p>
         <textarea
-          placeholder="Whatever your heart desires :)"
+          placeholder=""
           className={`${
             selected === "company" ? "bg-indigo-700" : "bg-violet-700"
           } transition-colors duration-[750ms] min-h-[150px] resize-none placeholder-white/70 p-2 rounded-md w-full focus:outline-0`}
@@ -157,7 +159,7 @@ const Images = ({ selected }) => {
         className="absolute inset-0 bg-slate-200"
         style={{
           backgroundImage:
-            "url(https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80)",
+            "url(https://alphathreaded.vercel.app/contactone.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -171,7 +173,7 @@ const Images = ({ selected }) => {
         className="absolute inset-0 bg-slate-200"
         style={{
           backgroundImage:
-            "url(https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80)",
+            "url(https://alphathreaded.vercel.app/contactwo.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
