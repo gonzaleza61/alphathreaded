@@ -46,7 +46,7 @@ const NavLeft = ({ setIsOpen }) => {
       <Logo />
       <NavLink href="#about" text="About Us" />
       <NavLink href="#services" text="Services" />
-      <NavLink href="#solutions" text="Solutions" />
+      <NavLink href="#team" text="Team" />
       <NavLink href="#testimonials" text="Testimonials" />
     </div>
   );
@@ -100,7 +100,7 @@ const NavMenu = ({ isOpen }) => {
     >
       <MenuLink href="#about" text="About Us" />
       <MenuLink href="#services" text="Services" />
-      <MenuLink href="#solutions" text="Solutions" />
+      <MenuLink href="#team" text="Team" />
       <MenuLink href="#testimonials" text="Testimonials" />
     </motion.div>
   );
