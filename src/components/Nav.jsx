@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { FiMenu, FiArrowRight } from "react-icons/fi";
-import logo from "../assets/logo2.jpeg";
+import logo from "/logo.jpeg";
 
 const FlipNavWrapper = () => {
   return (
