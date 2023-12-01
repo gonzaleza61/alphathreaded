@@ -20,7 +20,7 @@ const Form = ({ selected, setSelected }) => {
     <form
       onSubmit={(e) => e.preventDefault()}
       className={`p-8 w-full text-white transition-colors duration-[750ms] ${
-        selected === "company" ? "bg-red-700" : "bg-red-500"
+        selected === "company" ? "bg-red-700" : "bg-red-600"
       }`}
     >
       <h3 className="text-4xl font-bold mb-6">Contact us</h3>
@@ -32,7 +32,7 @@ const Form = ({ selected, setSelected }) => {
           type="text"
           placeholder="Your name..."
           className={`${
-            selected === "company" ? "bg-red-900" : "bg-red-600"
+            selected === "company" ? "bg-red-900" : "bg-red-700"
           } transition-colors duration-[750ms] placeholder-white/70 p-2 rounded-md w-full focus:outline-0`}
         />
       </div>
@@ -84,7 +84,7 @@ const Form = ({ selected, setSelected }) => {
         <textarea
           placeholder=""
           className={`${
-            selected === "company" ? "bg-red-900" : "bg-red-600"
+            selected === "company" ? "bg-red-900" : "bg-red-700"
           } transition-colors duration-[750ms] min-h-[150px] resize-none placeholder-white/70 p-2 rounded-md w-full focus:outline-0`}
         />
       </div>
@@ -115,7 +115,7 @@ const FormSelect = ({ selected, setSelected }) => {
     <div className="border-[1px] rounded border-white overflow-hidden font-medium w-fit">
       <button
         className={`${
-          selected === "individual" ? "text-violet-600" : "text-white"
+          selected === "individual" ? "text-black" : "text-white"
         } text-sm px-3 py-1.5 transition-colors duration-[750ms] relative`}
         onClick={() => setSelected("individual")}
       >
@@ -130,7 +130,7 @@ const FormSelect = ({ selected, setSelected }) => {
       </button>
       <button
         className={`${
-          selected === "company" ? "text-indigo-600" : "text-white"
+          selected === "company" ? "text-black" : "text-white"
         } text-sm px-3 py-1.5 transition-colors duration-[750ms] relative`}
         onClick={() => setSelected("company")}
       >
