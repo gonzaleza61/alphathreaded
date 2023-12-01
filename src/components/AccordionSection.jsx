@@ -13,7 +13,7 @@ const VerticalAccordion = () => {
   const [open, setOpen] = useState(items[0].id);
 
   return (
-    <section id="services" className="px-4 py-12 bg-indigo-600">
+    <section id="services" className="px-4 py-12 bg-red-600">
       <div className="w-full justify-center text-center pb-8">
         <h1 className="text-4xl md:text-6xl font-semibold text-white">
           Industries Served
@@ -58,7 +58,7 @@ const Panel = ({ open, setOpen, id, Icon, title, imgSrc, description }) => {
           {title}
         </span>
         <span className="block lg:hidden text-xl font-light">{title}</span>
-        <div className="w-6 lg:w-full aspect-square bg-indigo-600 text-white grid place-items-center">
+        <div className="w-6 lg:w-full aspect-square bg-red-700 text-white grid place-items-center">
           <Icon />
         </div>
         <span className="w-4 h-4 bg-white group-hover:bg-slate-50 transition-colors border-r-[1px] border-b-[1px] lg:border-b-0 lg:border-t-[1px] border-slate-200 rotate-45 absolute bottom-0 lg:bottom-[50%] right-[50%] lg:right-0 translate-y-[50%] translate-x-[50%] z-20" />

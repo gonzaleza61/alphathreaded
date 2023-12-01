@@ -1,6 +1,6 @@
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useRef, useEffect } from "react";
-import logo from "../assets/logo2.jpeg";
+import logo from "/logo.jpeg";
 
 export default function AboutSection() {
   const ref = useRef(null);

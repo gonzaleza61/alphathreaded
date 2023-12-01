@@ -61,9 +61,7 @@ const NavLink = ({ href, text }) => {
     >
       <motion.div whileHover={{ y: -30 }}>
         <span className="flex items-center h-[30px] text-gray-500">{text}</span>
-        <span className="flex items-center h-[30px] text-indigo-600">
-          {text}
-        </span>
+        <span className="flex items-center h-[30px] text-red-700">{text}</span>
       </motion.div>
     </a>
   );
@@ -83,7 +81,7 @@ const NavRight = () => {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="px-4 py-2 bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-medium rounded-md whitespace-nowrap"
+          className="px-4 py-2 bg-gradient-to-r from-red-500 to-red-700 text-white font-medium rounded-md whitespace-nowrap"
         >
           Request A Quote
         </motion.button>
@@ -98,7 +96,7 @@ const NavMenu = ({ isOpen }) => {
       variants={menuVariants}
       initial="closed"
       animate={isOpen ? "open" : "closed"}
-      className="absolute p-4 bg-white shadow-lg left-0 right-0 top-full origin-top flex flex-col gap-4"
+      className="absolute p-4 bg-black shadow-lg left-0 right-0 top-full origin-top flex flex-col gap-4"
     >
       <MenuLink href="#about" text="About Us" />
       <MenuLink href="#services" text="Services" />
@@ -121,9 +119,7 @@ const MenuLink = ({ href, text }) => {
       </motion.span>
       <motion.div whileHover={{ y: -30 }}>
         <span className="flex items-center h-[30px] text-gray-500">{text}</span>
-        <span className="flex items-center h-[30px] text-indigo-600">
-          {text}
-        </span>
+        <span className="flex items-center h-[30px] text-red-700">{text}</span>
       </motion.div>
     </motion.a>
   );

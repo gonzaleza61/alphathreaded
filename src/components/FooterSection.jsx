@@ -74,7 +74,7 @@ export default function FooterSection() {
               </div>
             </div>
           </div>
-          <div className="bg-indigo-700">
+          <div className="bg-red-700">
             <div className="container px-5 py-4 mx-auto">
               <p className="text-sm text-white capitalize xl:text-center">
                 © 2023 AlphaThreaded Products, All rights reserved{" "}

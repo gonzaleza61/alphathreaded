@@ -20,7 +20,7 @@ const Form = ({ selected, setSelected }) => {
     <form
       onSubmit={(e) => e.preventDefault()}
       className={`p-8 w-full text-white transition-colors duration-[750ms] ${
-        selected === "company" ? "bg-indigo-600" : "bg-violet-600"
+        selected === "company" ? "bg-red-700" : "bg-red-500"
       }`}
     >
       <h3 className="text-4xl font-bold mb-6">Contact us</h3>
@@ -32,7 +32,7 @@ const Form = ({ selected, setSelected }) => {
           type="text"
           placeholder="Your name..."
           className={`${
-            selected === "company" ? "bg-indigo-700" : "bg-violet-700"
+            selected === "company" ? "bg-red-900" : "bg-red-600"
           } transition-colors duration-[750ms] placeholder-white/70 p-2 rounded-md w-full focus:outline-0`}
         />
       </div>
@@ -71,7 +71,7 @@ const Form = ({ selected, setSelected }) => {
               type="text"
               placeholder="Your company name..."
               className={`${
-                selected === "company" ? "bg-indigo-700" : "bg-violet-700"
+                selected === "company" ? "bg-red-900" : "bg-red-900"
               } transition-colors duration-[750ms] placeholder-white/70 p-2 rounded-md w-full focus:outline-0`}
             />
           </motion.div>
@@ -84,7 +84,7 @@ const Form = ({ selected, setSelected }) => {
         <textarea
           placeholder=""
           className={`${
-            selected === "company" ? "bg-indigo-700" : "bg-violet-700"
+            selected === "company" ? "bg-red-900" : "bg-red-600"
           } transition-colors duration-[750ms] min-h-[150px] resize-none placeholder-white/70 p-2 rounded-md w-full focus:outline-0`}
         />
       </div>
@@ -100,8 +100,8 @@ const Form = ({ selected, setSelected }) => {
         type="submit"
         className={`${
           selected === "company"
-            ? "bg-white text-indigo-600"
-            : "bg-white text-violet-600"
+            ? "bg-white text-red-700"
+            : "bg-white text-red-600"
         } transition-colors duration-[750ms] text-lg text-center rounded-lg w-full py-3 font-semibold`}
       >
         Submit
