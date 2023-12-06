@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { FiMenu, FiArrowRight } from "react-icons/fi";
+import { Link } from "react-router-dom";
 import logo from "/logo.jpeg";
 
 const FlipNavWrapper = () => {
@@ -46,7 +47,7 @@ const NavLeft = ({ setIsOpen }) => {
       <Logo />
       <NavLink href="#about" text="About Us" />
       <NavLink href="#services" text="Services" />
-      <NavLink href="#team" text="Team" />
+      <NavLink href="/team" text="Team" />
       <NavLink href="#testimonials" text="Testimonials" />
     </div>
   );
