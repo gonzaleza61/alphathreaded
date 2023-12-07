@@ -1,7 +1,13 @@
+import TeamSection from "../components/TeamSection";
+import Example from "../components/Nav";
+import FooterSection from "../components/FooterSection";
+
 export default function TeamPage() {
   return (
     <>
-      <h1>hello team page</h1>
+      <Example />
+      <TeamSection />
+      <FooterSection />
     </>
   );
 }

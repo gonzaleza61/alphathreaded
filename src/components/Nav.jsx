@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { FiMenu, FiArrowRight } from "react-icons/fi";
-import { Link } from "react-router-dom";
 import logo from "/logo.jpeg";
 
 const FlipNavWrapper = () => {
@@ -45,10 +44,16 @@ const NavLeft = ({ setIsOpen }) => {
         <FiMenu />
       </motion.button>
       <Logo />
-      <NavLink href="#about" text="About Us" />
-      <NavLink href="#services" text="Services" />
+      <NavLink href="https://alphathreaded.vercel.app/#about" text="About Us" />
+      <NavLink
+        href="https://alphathreaded.vercel.app/#services"
+        text="Services"
+      />
       <NavLink href="/team" text="Team" />
-      <NavLink href="#testimonials" text="Testimonials" />
+      <NavLink
+        href="https://alphathreaded.vercel.app/#testimonials"
+        text="Testimonials"
+      />
     </div>
   );
 };
@@ -99,10 +104,19 @@ const NavMenu = ({ isOpen }) => {
       animate={isOpen ? "open" : "closed"}
       className="absolute p-4 bg-white shadow-lg left-0 right-0 top-full origin-top flex flex-col gap-4"
     >
-      <MenuLink href="#about" text="About Us" />
-      <MenuLink href="#services" text="Services" />
-      <MenuLink href="#team" text="Team" />
-      <MenuLink href="#testimonials" text="Testimonials" />
+      <MenuLink
+        href="https://alphathreaded.vercel.app/#about"
+        text="About Us"
+      />
+      <MenuLink
+        href="https://alphathreaded.vercel.app/#services"
+        text="Services"
+      />
+      <MenuLink href="/team" text="Team" />
+      <MenuLink
+        href="https://alphathreaded.vercel.app/#testimonials"
+        text="Testimonials"
+      />
     </motion.div>
   );
 };
