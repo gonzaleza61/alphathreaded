@@ -27,7 +27,9 @@ const Logo = () => {
   // Temp logo from https://logoipsum.com/
   return (
     <>
-      <img src={logo} alt="alpha thread logo" width={85} height={85} />
+      <a href="/">
+        <img src={logo} alt="alpha thread logo" width={85} height={85} />
+      </a>
     </>
   );
 };
