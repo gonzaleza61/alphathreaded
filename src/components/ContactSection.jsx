@@ -16,6 +16,8 @@ const ShiftingContactForm = () => {
 };
 
 const Form = ({ selected, setSelected }) => {
+  const [name, setName] = useState(" ");
+
   return (
     <form
       onSubmit={(e) => e.preventDefault()}
@@ -31,6 +33,10 @@ const Form = ({ selected, setSelected }) => {
         <input
           type="text"
           placeholder="Your name..."
+          value={name}
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
           className={`${
             selected === "company" ? "bg-red-900" : "bg-red-700"
           } transition-colors duration-[750ms] placeholder-white/70 p-2 rounded-md w-full focus:outline-0`}
