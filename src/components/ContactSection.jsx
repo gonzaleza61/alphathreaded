@@ -2,6 +2,8 @@
 /* eslint-disable react/prop-types */
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
+import { useFormik } from "formik";
+import * as Yup from "yup";
 
 const ShiftingContactForm = () => {
   const [selected, setSelected] = useState("individual");
@@ -16,11 +18,40 @@ const ShiftingContactForm = () => {
 };
 
 const Form = ({ selected, setSelected }) => {
-  const [name, setName] = useState(" ");
+  //Formik Logic
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      company: "",
+      message: "",
+    },
+
+    //Form Validation
+    validationSchema: Yup.object({
+      name: Yup.string()
+        .max(25, "Name must be 25 characters or less.")
+        .required("Name is required."),
+      email: Yup.string()
+        .max(25, "Name must be 25 characters or less.")
+        .required("Email is required."),
+      company: Yup.string()
+        .max(25, "Name must be 25 characters or less.")
+        .notRequired(),
+      message: Yup.string()
+        .max(500, "Name must be 500 characters or less.")
+        .required("Message is required."),
+    }),
+
+    //Submit Form
+    onSubmit: (values) => {
+      console.log(values);
+    },
+  });
 
   return (
     <form
-      onSubmit={(e) => e.preventDefault()}
+      onSubmit={formik.handleSubmit}
       className={`p-8 w-full text-white transition-colors duration-[750ms] ${
         selected === "company" ? "bg-red-700" : "bg-red-600"
       }`}
@@ -32,11 +63,24 @@ const Form = ({ selected, setSelected }) => {
         <p className="text-2xl mb-2">Hi 👋! My name is...</p>
         <input
           type="text"
-          placeholder="Your name..."
-          value={name}
-          onChange={(e) => {
-            setName(e.target.value);
-          }}
+          name="name"
+          placeholder="John Doe"
+          value={formik.values.name}
+          onChange={formik.handleChange}
+          className={`${
+            selected === "company" ? "bg-red-900" : "bg-red-700"
+          } transition-colors duration-[750ms] placeholder-white/70 p-2 rounded-md w-full focus:outline-0`}
+        />
+      </div>
+
+      <div className="mb-6">
+        <p className="text-2xl mb-2">My Email is...</p>
+        <input
+          type="email"
+          name="email"
+          placeholder="example@example.com"
+          value={formik.values.email}
+          onChange={formik.handleChange}
           className={`${
             selected === "company" ? "bg-red-900" : "bg-red-700"
           } transition-colors duration-[750ms] placeholder-white/70 p-2 rounded-md w-full focus:outline-0`}
@@ -75,7 +119,10 @@ const Form = ({ selected, setSelected }) => {
             <p className="text-2xl mb-2">by the name of...</p>
             <input
               type="text"
-              placeholder="Your company name..."
+              name="company"
+              value={formik.values.company}
+              onChange={formik.handleChange}
+              placeholder="XYZ Corporation"
               className={`${
                 selected === "company" ? "bg-red-900" : "bg-red-900"
               } transition-colors duration-[750ms] placeholder-white/70 p-2 rounded-md w-full focus:outline-0`}
@@ -88,7 +135,10 @@ const Form = ({ selected, setSelected }) => {
       <div className="mb-6">
         <p className="text-2xl mb-2">I'd love to ask about...</p>
         <textarea
-          placeholder=""
+          placeholder="Type your message here..."
+          name="message"
+          value={formik.values.message}
+          onChange={formik.handleChange}
           className={`${
             selected === "company" ? "bg-red-900" : "bg-red-700"
           } transition-colors duration-[750ms] min-h-[150px] resize-none placeholder-white/70 p-2 rounded-md w-full focus:outline-0`}
@@ -120,6 +170,7 @@ const FormSelect = ({ selected, setSelected }) => {
   return (
     <div className="border-[1px] rounded border-white overflow-hidden font-medium w-fit">
       <button
+        type="button"
         className={`${
           selected === "individual" ? "text-black" : "text-white"
         } text-sm px-3 py-1.5 transition-colors duration-[750ms] relative`}
@@ -135,6 +186,7 @@ const FormSelect = ({ selected, setSelected }) => {
         )}
       </button>
       <button
+        type="button"
         className={`${
           selected === "company" ? "text-black" : "text-white"
         } text-sm px-3 py-1.5 transition-colors duration-[750ms] relative`}
