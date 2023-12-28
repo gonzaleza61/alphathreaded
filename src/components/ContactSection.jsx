@@ -60,13 +60,18 @@ const Form = ({ selected, setSelected }) => {
 
       {/* Name input */}
       <div className="mb-6">
-        <p className="text-2xl mb-2">Hi 👋! My name is...</p>
+        <p className="text-2xl mb-2">
+          {formik.touched.name && formik.errors.name
+            ? formik.errors.name
+            : "Name"}
+        </p>
         <input
           type="text"
           name="name"
           placeholder="John Doe"
           value={formik.values.name}
           onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
           className={`${
             selected === "company" ? "bg-red-900" : "bg-red-700"
           } transition-colors duration-[750ms] placeholder-white/70 p-2 rounded-md w-full focus:outline-0`}
@@ -74,13 +79,18 @@ const Form = ({ selected, setSelected }) => {
       </div>
 
       <div className="mb-6">
-        <p className="text-2xl mb-2">My Email is...</p>
+        <p className="text-2xl mb-2">
+          {formik.touched.email && formik.errors.email
+            ? formik.errors.email
+            : "Email"}
+        </p>
         <input
           type="email"
           name="email"
           placeholder="example@example.com"
           value={formik.values.email}
           onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
           className={`${
             selected === "company" ? "bg-red-900" : "bg-red-700"
           } transition-colors duration-[750ms] placeholder-white/70 p-2 rounded-md w-full focus:outline-0`}
@@ -116,12 +126,17 @@ const Form = ({ selected, setSelected }) => {
             transition={BASE_TRANSITION}
             className="mb-6"
           >
-            <p className="text-2xl mb-2">by the name of...</p>
+            <p className="text-2xl mb-2">
+              {formik.touched.company && formik.errors.company
+                ? formik.errors.company
+                : "Company Name"}
+            </p>
             <input
               type="text"
               name="company"
               value={formik.values.company}
               onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
               placeholder="XYZ Corporation"
               className={`${
                 selected === "company" ? "bg-red-900" : "bg-red-900"
@@ -133,12 +148,17 @@ const Form = ({ selected, setSelected }) => {
 
       {/* Info */}
       <div className="mb-6">
-        <p className="text-2xl mb-2">I'd love to ask about...</p>
+        <p className="text-2xl mb-2">
+          {formik.touched.message && formik.errors.message
+            ? formik.errors.message
+            : "I'd love to ask about..."}
+        </p>
         <textarea
           placeholder="Type your message here..."
           name="message"
           value={formik.values.message}
           onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
           className={`${
             selected === "company" ? "bg-red-900" : "bg-red-700"
           } transition-colors duration-[750ms] min-h-[150px] resize-none placeholder-white/70 p-2 rounded-md w-full focus:outline-0`}
