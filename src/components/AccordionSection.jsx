@@ -13,7 +13,7 @@ const VerticalAccordion = () => {
   const [open, setOpen] = useState(items[0].id);
 
   return (
-    <section id="services" className="px-4 py-12 bg-red-600">
+    <section id="services" className="pt-8 pb-16 py-12 bg-red-600 ">
       <div className="w-full justify-center text-center pb-8">
         <h1 className="text-4xl md:text-6xl font-semibold text-white">
           Industries Served
