@@ -18,11 +18,13 @@ const ShiftingContactForm = () => {
 };
 
 const Form = ({ selected, setSelected }) => {
+  const [submitted, setSubmitted] = useState("");
   //Formik Logic
   const formik = useFormik({
     initialValues: {
       name: "",
       email: "",
+      phone: "",
       company: "",
       message: "",
     },
@@ -33,19 +35,29 @@ const Form = ({ selected, setSelected }) => {
         .max(25, "Name must be 25 characters or less.")
         .required("Name is required."),
       email: Yup.string()
-        .max(25, "Name must be 25 characters or less.")
+        .max(50, "Name must be 50 characters or less.")
         .required("Email is required."),
+      phone: Yup.string()
+        .min(7, "Phone number must be longer than 7 digits.")
+        .max(15, "Phone number must be less than 15 digits.")
+        .required("Phone Number is required."),
       company: Yup.string()
-        .max(25, "Name must be 25 characters or less.")
+        .max(25, "Company name must be 25 characters or less.")
         .notRequired(),
       message: Yup.string()
-        .max(500, "Name must be 500 characters or less.")
+        .max(500, "Message must be 500 characters or less.")
         .required("Message is required."),
     }),
 
     //Submit Form
     onSubmit: (values) => {
       console.log(values);
+      setSubmitted("Message has been submitted.");
+      values.name = "";
+      values.email = "";
+      values.phone = "";
+      values.company = "";
+      values.message = "";
     },
   });
 
@@ -89,6 +101,25 @@ const Form = ({ selected, setSelected }) => {
           name="email"
           placeholder="example@example.com"
           value={formik.values.email}
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          className={`${
+            selected === "company" ? "bg-red-900" : "bg-red-700"
+          } transition-colors duration-[750ms] placeholder-white/70 p-2 rounded-md w-full focus:outline-0`}
+        />
+      </div>
+
+      <div className="mb-6">
+        <p className="text-2xl mb-2">
+          {formik.touched.phone && formik.errors.phone
+            ? formik.errors.phone
+            : "Phone Number"}
+        </p>
+        <input
+          type="tel"
+          name="phone"
+          placeholder="e.g., (555) 123-4567"
+          value={formik.values.phone}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           className={`${
@@ -182,6 +213,7 @@ const Form = ({ selected, setSelected }) => {
       >
         Submit
       </motion.button>
+      <p>{submitted}</p>
     </form>
   );
 };
