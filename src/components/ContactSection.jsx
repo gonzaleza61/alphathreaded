@@ -50,8 +50,32 @@ const Form = ({ selected, setSelected }) => {
     }),
 
     //Submit Form
-    onSubmit: (values) => {
+    onSubmit: async (values) => {
       console.log(values);
+      try {
+        const response = await fetch(
+          "https://formsubmit.co/aarongonzalez357@gmail.com",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              // include any additional headers as needed
+            },
+            body: JSON.stringify(values),
+          }
+        );
+
+        if (response.ok) {
+          // Handle success (e.g., redirect, show success message)
+          console.log("Form submitted successfully");
+        } else {
+          // Handle errors (e.g., show error message)
+          console.error("Form submission failed");
+        }
+      } catch (error) {
+        // Handle network errors or other exceptions
+        console.error("Error submitting form:", error);
+      }
       setSubmitted("Message has been submitted.");
       values.name = "";
       values.email = "";
