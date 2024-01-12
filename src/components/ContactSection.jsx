@@ -53,17 +53,14 @@ const Form = ({ selected, setSelected }) => {
     onSubmit: async (values) => {
       console.log(values);
       try {
-        const response = await fetch(
-          "https://formsubmit.co/aarongonzalez357@gmail.com",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              // include any additional headers as needed
-            },
-            body: JSON.stringify(values),
-          }
-        );
+        const response = await fetch("https://submit-form.com/CdD3cdGby", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            // include any additional headers as needed
+          },
+          body: JSON.stringify(values),
+        });
 
         if (response.ok) {
           // Handle success (e.g., redirect, show success message)
