@@ -51,7 +51,7 @@ const Form = ({ selected, setSelected }) => {
 
     //Submit Form
     onSubmit: async (values) => {
-      console.log(values);
+      setSubmitted("Submitting..");
       try {
         const response = await fetch("https://submit-form.com/CdD3cdGby", {
           method: "POST",
