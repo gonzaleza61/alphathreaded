@@ -15,7 +15,10 @@ const ShuffleHero = () => {
           Unleash Your Potential with Premium Tools and Trusted
           Fasteners—Building {"Tomorrow's"} Success Stories Today.
         </p>
-        <button className="bg-red-600 text-white font-medium py-2 px-4 rounded transition-all hover:bg-red-700 active:scale-95">
+        <button
+          href="#contact"
+          className="bg-red-600 text-white font-medium py-2 px-4 rounded transition-all hover:bg-red-700 active:scale-95"
+        >
           Contact Us
         </button>
       </div>
